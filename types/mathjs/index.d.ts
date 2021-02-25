@@ -1537,6 +1537,20 @@ declare namespace math {
          */
         zeros(m: number, n: number, format?: string): MathArray | Matrix;
 
+        /**
+         * @param value The matrix to extract a column from
+         * @param index The column index
+         * @returns The specified column
+         */
+        colum(value: MathArray | Matrix, index: number): MathArray | Matrix;
+    
+        /**
+         * @param value The matrix to extract a row from
+         * @param index The row index
+         * @returns The specified row
+         */
+        row(value: MathArray | Matrix, index: number): MathArray | Matrix;
+        
         /*************************************************************************
          * Probability functions
          ************************************************************************/
