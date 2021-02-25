@@ -324,6 +324,12 @@ Matrices examples
         math.concat([[0, 1, 2]], [[1, 2, 3]]); // returns [[ 0, 1, 2, 1, 2, 3 ]]
         math.concat([[0, 1, 2]], [[1, 2, 3]], 0); // returns [[ 0, 1, 2 ], [ 1, 2, 3 ]]
     }
+    
+    // Extract row or column
+    {
+        math.column([[1, 2], [3, 4]], 1) // returns [[2], [4]]
+        math.row([[1, 2], [3, 4]], 1) // returns [[3, 4]]
+    }
 }
 
 /*
